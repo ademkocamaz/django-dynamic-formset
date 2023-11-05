@@ -33,6 +33,8 @@
                 if (elem.attr("for")) elem.attr("for", elem.attr("for").replace(idRegex, replacement));
                 if (elem.attr('id')) elem.attr('id', elem.attr('id').replace(idRegex, replacement));
                 if (elem.attr('name')) elem.attr('name', elem.attr('name').replace(idRegex, replacement));
+                //Adem KOCAMAZ - 2023-11-05 Added for datetimepicker
+                if (elem.attr('data-target')) elem.attr('data-target', elem.attr('data-target').replace(idRegex, replacement));
             },
 
             hasChildElements = function(row) {
